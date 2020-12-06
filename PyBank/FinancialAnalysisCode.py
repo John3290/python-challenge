@@ -95,13 +95,13 @@ print("Greatest Increase in Profits: "+ str(datedecrease) + " ($" + str(decrease
 output = os.path.join("Analysis", "results.txt")
 with open(output, 'w') as file:
     text = csv.writer(file)
-    text.writerow("Financial Analysis")
-    text.writerow("----------------------------")
-    text.writerow("Total Months: " + str(totalmonths))
-    text.writerow("Total Profits/ Losses: $" + str(total))
-    text.writerow("Average change in Profit/Losses: " + str(round(avchange,2)))
-    text.writerow("Greatest Increase in Profits: " + str(dateincrease) + " ($" + str(increaseprofits) + ")")
-    text.writerow("Greatest Increase in Profits: "+ str(datedecrease) + " ($" + str(decreaseprofits) + ")")
+    text.writerow(["Financial Analysis"])
+    text.writerow(["----------------------------"])
+    text.writerow(["Total Months: " + str(totalmonths)])
+    text.writerow(["Total Profits/ Losses: $" + str(total)])
+    text.writerow(["Average change in Profit/Losses: " + str(round(avchange,2))])
+    text.writerow(["Greatest Increase in Profits: " + str(dateincrease) + " ($" + str(increaseprofits) + ")"])
+    text.writerow(["Greatest Increase in Profits: "+ str(datedecrease) + " ($" + str(decreaseprofits) + ")"])
 
 
 # In[ ]:
