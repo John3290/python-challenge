@@ -59,17 +59,13 @@ with open(csvpath) as csvfile:
     
     #Revenue change calculation
     
-        #should int(row[1]) below be total instead?
-        #RevenueChange= int(row[1]) - PastRevenue
-        #RevenueChange = total - PastRevenue: this also didn't work!
         #values of column with revenue minus past revenue is the change in revenue
         
-        #avchangelist.append(RevenueChange)
         #updating the avchangelist to reflect the new total for revenue change
         avchangelist.append(int(row[1])- PastRevenue)
         
         PastRevenue = int(row[1])
-        #this doesn't make sense? 
+        
         
     #average change
     sumprofitloss = sum(avchangelist)
