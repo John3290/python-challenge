@@ -1,24 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
-
-
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 #import modules needed
 import os
 import csv
-
-
-# In[2]:
-
-
-# In[2]:
 
 #set everything to 0
 total = 0
@@ -32,20 +17,9 @@ avchangelist = []
 Monthslist = []
 
 
-# In[3]:
-
-
-# In[3]:
-
-
 #create the path. This will access the csv in the resources folder
 csvpath = os.path.join("Resources", "week_03_Python_homework_PyBank_Resources_budget_data.csv")
 
-
-# In[4]:
-
-
-# In[4]:
 
 
 with open(csvpath) as csvfile:
@@ -118,11 +92,6 @@ with open(csvpath) as csvfile:
         #the month that corresponds with the index for the smallest average change list value
 
 
-# In[6]:
-
-
-# In[5]:
-
 print("Financial Analysis")
 print("----------------------------")
 print("Total Months: " + str(totalmonths))
@@ -133,10 +102,6 @@ print("Greatest Increase in Profits: " + str(dateincrease) + " ($" + str(increas
 print("Greatest Increase in Profits: "+ str(datedecrease) + " ($" + str(decreaseprofits) + ")")
 
 
-# In[7]:
-
-
-In[6]:
 
 #export text file with results
 output = os.path.join("Analysis", "results.txt")
